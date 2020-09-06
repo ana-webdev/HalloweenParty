@@ -1,0 +1,486 @@
+html, body {
+    height: 100%;
+
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.background {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+
+}
+
+.title {
+    position: absolute;
+    top: calc(50% - 124px - 75px);
+    right: 0;
+    left: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 58px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+    max-width: 1000px;
+    margin: 0 auto;
+
+    
+}
+h1 + p {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    
+}
+
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #404149;
+    padding-top: 105px;
+    padding-bottom: 25px;
+    
+}
+
+
+.wrapper {
+    max-width: 1008px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.wrapper-gray {
+    background-color: #F7F7F7;
+    
+}
+.stat {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 780px;
+    margin: -150px auto 0 ;
+}
+
+
+.stat-item h2 {
+    font-size: 64px;
+    color: #F7654A;
+    padding-top: 57px;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+.stat-item h3 {
+    font-size: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+.stat-item p {
+    color: #999999;
+    margin-top: 0;
+    padding-bottom: 57px;
+}
+
+
+.box-party {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.box-party img {
+    width: 100%;
+}
+.box-party > div {
+    flex-basis: 31.5%;
+    max-width: 31.5%;
+}
+.box-party h3 {
+    color: #404149;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 75px;
+}
+.box-party h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 55px;
+height: 6px;
+background-color: #F7654A;
+}
+
+.contact {
+    background-color: #F7654A;
+    color: #FFFFFF;
+    padding: 25px 0 40px 0;
+}
+
+.box-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-contact h3 {
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    line-height: 71px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.box-contact p {
+    font-size: 24px;
+    letter-spacing: 0.1px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-contact button {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px 30px 15px 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000000;
+    
+}
+.button img {
+    height: 14px;
+    padding-right: 10px;
+    margin-bottom: -1px;
+    margin-top: 0;
+
+}
+
+
+
+.grid {
+    padding-top: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-gap: 25px;
+}
+
+.grid-item {
+    background-color: #F7F7F7;
+    padding: 50px 30px 45px;
+}
+
+
+.grid-one {
+    grid-area: a;
+}
+.grid-two {
+    grid-area: b;
+}
+.grid-three {
+    grid-area: c;
+}
+.grid-four {
+    grid-area: d;
+}
+.grid-five {
+    grid-area: e;
+}
+.grid-six {
+    grid-area: f;
+}
+
+
+.grid-photo {
+    padding-top: 115px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.grid-photo-item {
+    height: 100%;
+}
+
+.grid-photo-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.box-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 110px;
+}
+.box-feedback > div {
+    box-sizing: content-box;
+    flex-basis: 31.5%;
+    max-width: 31.5%;
+}
+.feedback {
+    background-color: #F7F7F7;
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.feedback::before {
+    content: "";
+    background-image: url(../img/quote.svg);
+    display: block;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 28px;
+    padding-bottom: 15px;
+
+}
+
+.name {
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 35px;
+    padding-bottom: 110px;
+}
+
+.footer-contact > div {
+    flex-basis:24%;
+    max-width: 24%;
+}
+
+.footer-contact h3 {
+    color: #999999;
+    font-size: 20px;
+    margin-top: 13px;
+    letter-spacing: 1px;
+
+}
+.footer-contact img {
+    height: 40px;
+}
+.footer-contact-info {
+    list-style: none;
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 0;
+
+}
+.footer-contact-info li {
+    margin-bottom: 2px;
+}
+
+.footer-contact-mail {
+    color: #F7654A;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 8px;
+}
+.box-footer a {
+    color: #F7654A;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #404149;
+    padding: 20px 0;
+}
+
+@media (max-width:920px) {
+    .body {
+        font-size: 16px;
+    }
+    .wrapper {
+        max-width: 600px;
+    }
+    h1 {
+        font-size: 38px;
+        max-width: 600px;
+    }
+    .stat-item h2 {
+        font-size: 50px;
+        padding-top: 40px;
+        margin-bottom: 8px;
+    }
+    .stat {
+        max-width: 450px;
+        margin: -127px auto 0;
+    }
+    .stat-item h3 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+    .stat-item p {
+        padding-bottom: 37px;
+    }
+    .title {
+        position: absolute;
+        top: calc(50% - 65px - 75px);
+        right: 0;
+        left: 0;
+    }
+    h2 {
+        font-size: 20px;
+        padding-top: 34px;
+        padding-bottom: 10px;
+    }
+    .box-party h3 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 15px;
+    }
+    .box-contact h3 {
+        font-size: 25px;
+    }
+    .box-contact p {
+        font-size: 14px;
+    }
+    .contact {
+        padding: 5px 0 27px 0;
+    }
+    .box-contact button {
+        padding: 10px 23px 10px 23px;
+        font-size: 13px;
+        margin-top: 21px;
+    }
+    .grid-item h3 {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+    }
+    .grid-item {
+        padding: 29px 18px 28px;
+    }
+    .grid-photo {
+        padding-top: 70px;
+    }
+    .box-feedback {
+        flex-wrap: wrap;
+    }
+    .box-feedback > div {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .feedback {
+        margin-bottom: 2px;
+    }
+    .name {
+        font-size: 18px;
+        padding-left: 24px;
+    }
+    .box-feedback {
+        margin-bottom: 38px;
+    }
+    .footer-contact-info {
+        font-size: 15px;
+    }
+    .footer-contact {
+        flex-wrap: wrap;
+        padding-bottom: 69px;
+    }
+    .footer-contact > div {
+        flex-basis: 49%;
+        max-width: 49%;
+    }
+    .footer {
+        padding: 12px 0;
+    }
+    .box-footer {
+        font-size: 12px;
+    }
+
+}
+@media (max-width:640px) {
+    
+    .body {
+        font-size: 14px;
+    }
+    .title {
+        position: absolute;
+        top: calc(50% - 65px - 75px);
+        right: 0;
+        left: 0;
+        left: inherit;
+        right: inherit;
+    }
+    .background {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    }
+    .stat , .box-party {
+        flex-wrap: wrap;
+    }
+    .box-party > div {
+        flex-basis: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .box-party img {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .stat-item {
+        flex-basis: 49%;
+        max-width: 49%;
+    }
+    .box-party h3::before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .box-party h3 {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        margin-top: 27px;
+    }
+    .grid {
+        grid-template-areas: "a b" "c d " "e f"
+    }
+    .grid-photo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
